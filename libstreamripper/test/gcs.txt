@@ -1,0 +1,1162 @@
+=========================
+STREAMRIPPER unix 1.64.6-HOD
+Locale codeset: ISO-8859-1
+Filesys codeset: UTF-8
+ID3 codeset: 
+Metadata codeset: 
+Relay codeset: ISO-8859-1
+Pre ripthread: http://stream-ru1.radioparadise.com:9000/mp3-192
+------ RIP_MANAGER_INFO -------
+streamname = 
+server_name = 
+bitrate = 0
+meta_interval = 0
+filename = 
+filesize = 0
+status = 0
+track_count = 0
+external_process = (nil)
+label = 
+url = http://stream-ru1.radioparadise.com:9000/mp3-192
+proxyurl = 
+output_directory = ./
+output_pattern = 
+showfile_pattern = 
+if_name = 
+rules_file = 
+pls_file = 
+relay_ip = 
+ext_cmd = 
+useragent = 
+relay_port = 8000
+max_port = 18000
+max_connections = 1
+maxMB_rip_size = 0
+auto_reconnect = 1
+make_relay = 0
+add_id3v1 = 0
+add_id3v2 = 1
+check_max_bytes = 0
+keep_incomplete = 0
+rip_individual_tracks = 1
+rip_single_file = 0
+use_ext_cmd = 0
+timeout = 15
+dropcount = 1
+count_start = 0
+overwrite = version
+start_ripping: checkpoint 1
+Getting proxy from $http_proxy: http://runnls001.symphonyteleca.com:8080/
+start_ripping: checkpoint 2
+***** URL = http://stream-ru1.radioparadise.com:9000/mp3-192 *****
+http_sc_connect(): calling http_parse_url
+***** PROXY = http://runnls001.symphonyteleca.com:8080/ *****
+http_parse_url: http://runnls001.symphonyteleca.com:8080/
+Branch 1 (runnls001.symphonyteleca.com:8080/)
+http_sc_connect(): calling socklib_init
+http_sc_connect(): calling socklib_open host=runnls001.symphonyteleca.com, port=8080
+Calling bind
+Calling gethostbyname
+Calling connect
+Connect complete
+http_sc_connect(): calling http_construct_sc_request
+http_parse_url: http://stream-ru1.radioparadise.com:9000/mp3-192
+Branch 1 (stream-ru1.radioparadise.com:9000/mp3-192)
+http_parse_url: http://runnls001.symphonyteleca.com:8080/
+Branch 1 (runnls001.symphonyteleca.com:8080/)
+SC REQUEST:
+GET http://stream-ru1.radioparadise.com:9000/mp3-192 HTTP/1.1
+Accept: */*
+Cache-Control: no-cache
+User-Agent: Streamripper/1.x
+Icy-Metadata: 1
+Connection: close
+Host: stream-ru1.radioparadise.com:9000
+
+http_sc_connect(): calling socklib_sendall
+http_sc_connect(): calling http_get_sc_header
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+RECV req     1 bytes, got     1 bytes
+http_parse_url: http://stream-ru1.radioparadise.com:9000/mp3-192
+Branch 1 (stream-ru1.radioparadise.com:9000/mp3-192)
+http header:
+HTTP/1.0 200 OK
+Content-Type: audio/mpeg
+icy-br: 192
+icy-genre: eclectic rock
+icy-name: Radio Paradise - DJ-mixed modern & classic rock, world, electronica & more - info: radioparadise.com
+icy-notice1: <BR>This stream requires <a href="http://www.winamp.com/">Winamp</a><BR>
+icy-notice2: SHOUTcast Distributed Network Audio Server/Linux v1.9.8<BR>
+icy-pub: 0
+icy-url: http://www.radioparadise.com
+Server: Icecast 2.3.2
+Cache-Control: no-cache
+icy-metaint: 32768
+X-Cache: MISS from runnls001
+Connection: close
+
+Deduced content type: 1
+FILELIB_INIT: output_directory=./
+FILELIB_INIT: output_pattern=
+FILELIB_INIT: showfile_pattern=
+converting output_directory
+cur=0, btc=3, br=3, bw=3 (b1=0x2e)
+Successful conversion: 3 bytes read
+convert_string_with_replacement |./| -> |./| (ISO-8859-1 -> UTF-8)
+converting output_pattern
+cur=0, btc=1, br=1, bw=1 (b1=0x00)
+Successful conversion: 1 bytes read
+convert_string_with_replacement || -> || (ISO-8859-1 -> UTF-8)
+converting showfile_pattern
+cur=0, btc=1, br=1, bw=1 (b1=0x00)
+Successful conversion: 1 bytes read
+convert_string_with_replacement || -> || (ISO-8859-1 -> UTF-8)
+converting icy_name
+g_iconv_open returned zero
+Error converting gstring_from_string
+Converted output directory: len=2
+Replacing invalid chars in stripped_icy_name
+  
+Removing trailing periods
+  
+cur=0, btc=20, br=20, bw=20 (b1=0x32)
+Successful conversion: 20 bytes read
+convert_string_with_replacement |2014_10_20_15_16_48| -> |2014_10_20_15_16_48| (UTF-8 -> UTF-8)
+cur=0, btc=41, br=41, bw=41 (b1=0x2f)
+Successful conversion: 41 bytes read
+convert_string_with_replacement |/home/ruinrobo/work/libstreamripper/test| -> |/home/ruinrobo/work/libstreamripper/test| (UTF-8 -> UTF-8)
+devicesplit: 2 -> 0 2
+Composed pattern head (43) <- (0,41,2)
+m_output_directory: /home/ruinrobo/work/libstreamripper/test/.//
+m_output_pattern: %A - %T
+Trying to make output_directory: /home/ruinrobo/work/libstreamripper/test/.//
+cur=0, btc=2, br=2, bw=2 (b1=0x2f)
+Successful conversion: 2 bytes read
+convert_string_with_replacement |/| -> |/| (UTF-8 -> UTF-8)
+mkdir = / -> /
+cur=0, btc=7, br=7, bw=7 (b1=0x2f)
+Successful conversion: 7 bytes read
+convert_string_with_replacement |/home/| -> |/home/| (UTF-8 -> UTF-8)
+mkdir = /home/ -> /home/
+cur=0, btc=16, br=16, bw=16 (b1=0x2f)
+Successful conversion: 16 bytes read
+convert_string_with_replacement |/home/ruinrobo/| -> |/home/ruinrobo/| (UTF-8 -> UTF-8)
+mkdir = /home/ruinrobo/ -> /home/ruinrobo/
+cur=0, btc=21, br=21, bw=21 (b1=0x2f)
+Successful conversion: 21 bytes read
+convert_string_with_replacement |/home/ruinrobo/work/| -> |/home/ruinrobo/work/| (UTF-8 -> UTF-8)
+mkdir = /home/ruinrobo/work/ -> /home/ruinrobo/work/
+cur=0, btc=37, br=37, bw=37 (b1=0x2f)
+Successful conversion: 37 bytes read
+convert_string_with_replacement |/home/ruinrobo/work/libstreamripper/| -> |/home/ruinrobo/work/libstreamripper/| (UTF-8 -> UTF-8)
+mkdir = /home/ruinrobo/work/libstreamripper/ -> /home/ruinrobo/work/libstreamripper/
+cur=0, btc=42, br=42, bw=42 (b1=0x2f)
+Successful conversion: 42 bytes read
+convert_string_with_replacement |/home/ruinrobo/work/libstreamripper/test/| -> |/home/ruinrobo/work/libstreamripper/test/| (UTF-8 -> UTF-8)
+mkdir = /home/ruinrobo/work/libstreamripper/test/ -> /home/ruinrobo/work/libstreamripper/test/
+cur=0, btc=44, br=44, bw=44 (b1=0x2f)
+Successful conversion: 44 bytes read
+convert_string_with_replacement |/home/ruinrobo/work/libstreamripper/test/./| -> |/home/ruinrobo/work/libstreamripper/test/./| (UTF-8 -> UTF-8)
+mkdir = /home/ruinrobo/work/libstreamripper/test/./ -> /home/ruinrobo/work/libstreamripper/test/./
+cur=0, btc=45, br=45, bw=45 (b1=0x2f)
+Successful conversion: 45 bytes read
+convert_string_with_replacement |/home/ruinrobo/work/libstreamripper/test/.//| -> |/home/ruinrobo/work/libstreamripper/test/.//| (UTF-8 -> UTF-8)
+mkdir = /home/ruinrobo/work/libstreamripper/test/.// -> /home/ruinrobo/work/libstreamripper/test/.//
+cur=0, btc=1, br=1, bw=1 (b1=0x00)
+Successful conversion: 1 bytes read
+convert_string_with_replacement || -> || (UTF-8 -> UTF-8)
+mkdir =  -> 
+Trying to make incomplete_directory: /home/ruinrobo/work/libstreamripper/test/.//incomplete/
+cur=0, btc=56, br=56, bw=56 (b1=0x2f)
+Successful conversion: 56 bytes read
+convert_string_with_replacement |/home/ruinrobo/work/libstreamripper/test/.//incomplete/| -> |/home/ruinrobo/work/libstreamripper/test/.//incomplete/| (UTF-8 -> UTF-8)
+mkdir = /home/ruinrobo/work/libstreamripper/test/.//incomplete/ -> /home/ruinrobo/work/libstreamripper/test/.//incomplete/
+RIPSTREAM_CLEAR
+Ripthread did initialization
+Gonna ripstream_rip
+RIPSTREAM_RIP_MP3: top of loop
+RECV req 32768 bytes, got  1400 bytes
+RECV req 31368 bytes, got  1400 bytes
+RECV req 29968 bytes, got  1400 bytes
+RECV req 28568 bytes, got  1400 bytes
+RECV req 27168 bytes, got  1400 bytes
+RECV req 25768 bytes, got  1400 bytes
+RECV req 24368 bytes, got  1400 bytes
+RECV req 22968 bytes, got  1400 bytes
+RECV req 21568 bytes, got  1400 bytes
+RECV req 20168 bytes, got  1400 bytes
+RECV req 18768 bytes, got  1400 bytes
+RECV req 17368 bytes, got  1400 bytes
+RECV req 15968 bytes, got  1400 bytes
+RECV req 14568 bytes, got  1400 bytes
+RECV req 13168 bytes, got  1400 bytes
+RECV req 11768 bytes, got  1448 bytes
+RECV req 10320 bytes, got  1448 bytes
+RECV req  8872 bytes, got  1304 bytes
+RECV req  7568 bytes, got  1400 bytes
+RECV req  6168 bytes, got  1400 bytes
+RECV req  4768 bytes, got  1400 bytes
+RECV req  3368 bytes, got  1400 bytes
+RECV req  1968 bytes, got  1399 bytes
+RECV req   569 bytes, got   569 bytes
+RECV req     1 bytes, got     1 bytes
+METADATA LEN: 8
+RECV req   128 bytes, got   128 bytes
+METADATA TITLE
+53 74 72 65 61 6d 54 69 74 6c 65 3d 27 4a 6f 73 c3 a9 20 47 
+6f 6e 7a c3 a1 6c 65 7a 20 2d 20 53 74 61 79 20 41 6c 69 76 
+65 27 3b 53 74 72 65 61 6d 55 72 6c 3d 27 68 74 74 70 3a 2f 
+2f 77 77 77 2e 72 61 64 69 6f 70 61 72 61 64 69 73 65 2e 63 
+6f 6d 2f 67 72 61 70 68 69 63 73 2f 63 6f 76 65 72 73 2f 6d 
+2f 42 30 30 47 47 34 32 39 4b 53 2e 6a 70 67 27 3b  0  0  0 
+ 0  0  0  0  0  0  0  0 
+ S  t  r  e  a  m  T  i  t  l  e  =  '  J  o  s  �  �     G 
+ o  n  z  �  �  l  e  z     -     S  t  a  y     A  l  i  v 
+ e  '  ;  S  t  r  e  a  m  U  r  l  =  '  h  t  t  p  :  / 
+ /  w  w  w  .  r  a  d  i  o  p  a  r  a  d  i  s  e  .  c 
+ o  m  /  g  r  a  p  h  i  c  s  /  c  o  v  e  r  s  /  m 
+ /  B  0  0  G  G  4  2  9  K  S  .  j  p  g  '  ; 
+
+gnamebuf (stripped) = José González - Stay Alive
+Querying stream for bitrate - first time.
+Decoded bitrate from stream: 192000
+Detected bitrate: 192
+---------------------------------------------------
+xs: 1
+xs_search_window: 6000,6000
+xs_silence_length: 1000
+xs_padding: 0,0
+xs_offset: 0
+---------------------------------------------------
+bitrate = 192, meta_inf = 32768
+---------------------------------------------------
+mi_to_mic: 16384
+sws: 288000
+sl: 24000
+padding: 0 0
+offset: 0
+mic_to_sw_start: -160384
+mic_to_sw_end: 127616
+mic_to_rw_start: -160384
+mic_to_rw_end: 127616
+mic_to_cb_start: -163840
+mic_to_cb_end: 131072
+CBUF2 (BLOCKS): -5:4 -> 9
+m_mic_to_cb_end: 4
+m_rw_start_to_cb_end: 291456
+m_rw_end_to_cb_end: 3456
+m_rw_start_to_sw_start: 0
+Converting query string to wide
+g_iconv_open returned zero
+Error converting gstring_from_string
+Testing match rule:  vs. ^A suivre:
+Testing subst rule:  vs. [[:space:]]*-?[[:space:]]*mp3pro$
+Testing match rule:  vs. ^[[:space:]]*(.*?[^-[:space:]])[[:space:]]+-[[:space:]]+(.*)[[:space:]]*$
+Testing match rule:  vs. ^[[:space:]]*([^-]*[^-[:space:]])[[:space:]]*-[[:space:]]*(.*)[[:space:]]*$
+Fell through while parsing data...
+Converting relay string to char
+cur=0, btc=16, br=16, bw=16 (b1=0x53)
+Successful conversion: 16 bytes read
+convert_string_with_replacement |StreamTitle='';| -> |StreamTitle='';| (UTF-8 -> )
+CBUF_INSERT
+---CBUF_DEBUG_META_LIST---
+294912: <size>
+0: Start
+32767: 0 [1]StreamTitle='';
+32768: End
+Testing to write showfile
+First time through...
+calling rip_manager_start_track(#2)
+cur=0, btc=63, br=63, bw=63 (b1=0x2f)
+Successful conversion: 63 bytes read
+convert_string_with_replacement |/home/ruinrobo/work/libstreamripper/test/.//incomplete/ - .mp3| -> |/home/ruinrobo/work/libstreamripper/test/.//incomplete/ - .mp3| (UTF-8 -> UTF-8)
+Trying to create file: /home/ruinrobo/work/libstreamripper/test/.//incomplete/ - .mp3
+cur=0, btc=4, br=4, bw=4 (b1=0x20)
+Successful conversion: 4 bytes read
+convert_string_with_replacement | - | -> | - | (UTF-8 -> ISO-8859-1)
+g_iconv_open returned zero
+Error converting string_from_gstring
+g_iconv_open returned zero
+Error converting string_from_gstring
+g_iconv_open returned zero
+Error converting string_from_gstring
+g_iconv_open returned zero
+Error converting string_from_gstring
+g_iconv_open returned zero
+Error converting string_from_gstring
+g_iconv_open returned zero
+Error converting string_from_gstring
+rmi->current_track.have_track_info = 1
+----- TRACK_INFO old
+HAVETI: 1
+RAW_MD: José González - Stay Alive
+ARTIST: 
+TITLE:  
+ALBUM:  
+TRACK_P:
+TRACK_A:0
+YEAR:  
+SAVE:   1
+----- TRACK_INFO new
+HAVETI: 0
+RAW_MD: 
+ARTIST: 
+TITLE:  
+ALBUM:  
+TRACK_P:
+TRACK_A:
+YEAR:  
+SAVE:   1
+----- TRACK_INFO current
+HAVETI: 1
+RAW_MD: José González - Stay Alive
+ARTIST: 
+TITLE:  
+ALBUM:  
+TRACK_P:
+TRACK_A:0
+YEAR:  
+SAVE:   1
+Did ripstream_rip
+retval = 0 -68
+rmi started = 1
+some status
+Gonna ripstream_rip
+RIPSTREAM_RIP_MP3: top of loop
+RECV req 32768 bytes, got  2231 bytes
+RECV req 30537 bytes, got  1448 bytes
+RECV req 29089 bytes, got  1448 bytes
+RECV req 27641 bytes, got  1448 bytes
+RECV req 26193 bytes, got  1256 bytes
+RECV req 24937 bytes, got  1400 bytes
+RECV req 23537 bytes, got  1400 bytes
+RECV req 22137 bytes, got  1400 bytes
+RECV req 20737 bytes, got  1400 bytes
+RECV req 19337 bytes, got  1400 bytes
+RECV req 17937 bytes, got  1400 bytes
+RECV req 16537 bytes, got  1400 bytes
+RECV req 15137 bytes, got  1400 bytes
+RECV req 13737 bytes, got  1400 bytes
+RECV req 12337 bytes, got  1400 bytes
+RECV req 10937 bytes, got  1400 bytes
+RECV req  9537 bytes, got  1400 bytes
+RECV req  8137 bytes, got  1400 bytes
+RECV req  6737 bytes, got  1400 bytes
+RECV req  5337 bytes, got  1400 bytes
+RECV req  3937 bytes, got  1448 bytes
+RECV req  2489 bytes, got  1448 bytes
+RECV req  1041 bytes, got  1041 bytes
+RECV req     1 bytes, got     1 bytes
+METADATA LEN: 0
+CBUF_INSERT
+---CBUF_DEBUG_META_LIST---
+294912: <size>
+0: Start
+32767: 0 [1]StreamTitle='';
+65536: End
+Testing to write showfile
+rmi->current_track.have_track_info = 0
+----- TRACK_INFO old
+HAVETI: 1
+RAW_MD: José González - Stay Alive
+ARTIST: 
+TITLE:  
+ALBUM:  
+TRACK_P:
+TRACK_A:0
+YEAR:  
+SAVE:   1
+----- TRACK_INFO new
+HAVETI: 0
+RAW_MD: 
+ARTIST: 
+TITLE:  
+ALBUM:  
+TRACK_P:
+TRACK_A:
+YEAR:  
+SAVE:   1
+----- TRACK_INFO current
+HAVETI: 0
+RAW_MD: 
+ARTIST: 
+TITLE:  
+ALBUM:  
+TRACK_P:
+TRACK_A:1
+YEAR:  
+SAVE:   1
+Did ripstream_rip
+retval = 0 -68
+rmi started = 1
+some status
+Gonna ripstream_rip
+RIPSTREAM_RIP_MP3: top of loop
+RECV req 32768 bytes, got   406 bytes
+RECV req 32362 bytes, got  1256 bytes
+RECV req 31106 bytes, got  1400 bytes
+RECV req 29706 bytes, got  1400 bytes
+RECV req 28306 bytes, got  1400 bytes
+RECV req 26906 bytes, got  1400 bytes
+RECV req 25506 bytes, got  1400 bytes
+RECV req 24106 bytes, got  1400 bytes
+RECV req 22706 bytes, got  1400 bytes
+RECV req 21306 bytes, got  1400 bytes
+RECV req 19906 bytes, got  1400 bytes
+RECV req 18506 bytes, got  1400 bytes
+RECV req 17106 bytes, got  1400 bytes
+RECV req 15706 bytes, got  1400 bytes
+RECV req 14306 bytes, got  1400 bytes
+RECV req 12906 bytes, got  1400 bytes
+RECV req 11506 bytes, got  1400 bytes
+RECV req 10106 bytes, got  1400 bytes
+RECV req  8706 bytes, got  1400 bytes
+RECV req  7306 bytes, got  1400 bytes
+RECV req  5906 bytes, got  1400 bytes
+RECV req  4506 bytes, got  1400 bytes
+RECV req  3106 bytes, got  1400 bytes
+RECV req  1706 bytes, got  1399 bytes
+RECV req   307 bytes, got   307 bytes
+RECV req     1 bytes, got     1 bytes
+METADATA LEN: 0
+CBUF_INSERT
+---CBUF_DEBUG_META_LIST---
+294912: <size>
+0: Start
+32767: 0 [1]StreamTitle='';
+98304: End
+Testing to write showfile
+rmi->current_track.have_track_info = 0
+----- TRACK_INFO old
+HAVETI: 1
+RAW_MD: José González - Stay Alive
+ARTIST: 
+TITLE:  
+ALBUM:  
+TRACK_P:
+TRACK_A:0
+YEAR:  
+SAVE:   1
+----- TRACK_INFO new
+HAVETI: 0
+RAW_MD: 
+ARTIST: 
+TITLE:  
+ALBUM:  
+TRACK_P:
+TRACK_A:
+YEAR:  
+SAVE:   1
+----- TRACK_INFO current
+HAVETI: 0
+RAW_MD: 
+ARTIST: 
+TITLE:  
+ALBUM:  
+TRACK_P:
+TRACK_A:1
+YEAR:  
+SAVE:   1
+Did ripstream_rip
+retval = 0 -68
+rmi started = 1
+some status
+Gonna ripstream_rip
+RIPSTREAM_RIP_MP3: top of loop
+RECV req 32768 bytes, got  1093 bytes
+RECV req 31675 bytes, got  1400 bytes
+RECV req 30275 bytes, got  1400 bytes
+RECV req 28875 bytes, got  1400 bytes
+RECV req 27475 bytes, got  1400 bytes
+RECV req 26075 bytes, got  1400 bytes
+RECV req 24675 bytes, got  1400 bytes
+RECV req 23275 bytes, got  1400 bytes
+RECV req 21875 bytes, got  1400 bytes
+RECV req 20475 bytes, got  1400 bytes
+RECV req 19075 bytes, got  1400 bytes
+RECV req 17675 bytes, got  1400 bytes
+RECV req 16275 bytes, got  1400 bytes
+RECV req 14875 bytes, got  1400 bytes
+RECV req 13475 bytes, got  1400 bytes
+RECV req 12075 bytes, got  1400 bytes
+RECV req 10675 bytes, got  1400 bytes
+RECV req  9275 bytes, got  1400 bytes
+RECV req  7875 bytes, got  1400 bytes
+RECV req  6475 bytes, got  1400 bytes
+RECV req  5075 bytes, got  1400 bytes
+RECV req  3675 bytes, got  1400 bytes
+RECV req  2275 bytes, got  1400 bytes
+RECV req   875 bytes, got   875 bytes
+RECV req     1 bytes, got     1 bytes
+METADATA LEN: 0
+CBUF_INSERT
+---CBUF_DEBUG_META_LIST---
+294912: <size>
+0: Start
+32767: 0 [1]StreamTitle='';
+131072: End
+Testing to write showfile
+rmi->current_track.have_track_info = 0
+----- TRACK_INFO old
+HAVETI: 1
+RAW_MD: José González - Stay Alive
+ARTIST: 
+TITLE:  
+ALBUM:  
+TRACK_P:
+TRACK_A:0
+YEAR:  
+SAVE:   1
+----- TRACK_INFO new
+HAVETI: 0
+RAW_MD: 
+ARTIST: 
+TITLE:  
+ALBUM:  
+TRACK_P:
+TRACK_A:
+YEAR:  
+SAVE:   1
+----- TRACK_INFO current
+HAVETI: 0
+RAW_MD: 
+ARTIST: 
+TITLE:  
+ALBUM:  
+TRACK_P:
+TRACK_A:1
+YEAR:  
+SAVE:   1
+Did ripstream_rip
+retval = 0 -68
+rmi started = 1
+some status
+Gonna ripstream_rip
+RIPSTREAM_RIP_MP3: top of loop
+RECV req 32768 bytes, got   524 bytes
+RECV req 32244 bytes, got  1400 bytes
+RECV req 30844 bytes, got  1400 bytes
+RECV req 29444 bytes, got  1400 bytes
+RECV req 28044 bytes, got  1400 bytes
+RECV req 26644 bytes, got  1400 bytes
+RECV req 25244 bytes, got  1400 bytes
+RECV req 23844 bytes, got  1400 bytes
+RECV req 22444 bytes, got  1400 bytes
+RECV req 21044 bytes, got  1400 bytes
+RECV req 19644 bytes, got  1400 bytes
+RECV req 18244 bytes, got  1400 bytes
+RECV req 16844 bytes, got  1400 bytes
+RECV req 15444 bytes, got  1400 bytes
+RECV req 14044 bytes, got  1400 bytes
+RECV req 12644 bytes, got  1400 bytes
+RECV req 11244 bytes, got  1400 bytes
+RECV req  9844 bytes, got  1400 bytes
+RECV req  8444 bytes, got  1400 bytes
+RECV req  7044 bytes, got  1400 bytes
+RECV req  5644 bytes, got  1400 bytes
+RECV req  4244 bytes, got  1400 bytes
+RECV req  2844 bytes, got  1400 bytes
+RECV req  1444 bytes, got  1399 bytes
+RECV req    45 bytes, got    45 bytes
+RECV req     1 bytes, got     1 bytes
+METADATA LEN: 0
+CBUF_INSERT
+---CBUF_DEBUG_META_LIST---
+294912: <size>
+0: Start
+32767: 0 [1]StreamTitle='';
+163840: End
+Testing to write showfile
+rmi->current_track.have_track_info = 0
+----- TRACK_INFO old
+HAVETI: 1
+RAW_MD: José González - Stay Alive
+ARTIST: 
+TITLE:  
+ALBUM:  
+TRACK_P:
+TRACK_A:0
+YEAR:  
+SAVE:   1
+----- TRACK_INFO new
+HAVETI: 0
+RAW_MD: 
+ARTIST: 
+TITLE:  
+ALBUM:  
+TRACK_P:
+TRACK_A:
+YEAR:  
+SAVE:   1
+----- TRACK_INFO current
+HAVETI: 0
+RAW_MD: 
+ARTIST: 
+TITLE:  
+ALBUM:  
+TRACK_P:
+TRACK_A:1
+YEAR:  
+SAVE:   1
+Did ripstream_rip
+retval = 0 -68
+rmi started = 1
+some status
+Gonna ripstream_rip
+RIPSTREAM_RIP_MP3: top of loop
+RECV req 32768 bytes, got  1355 bytes
+RECV req 31413 bytes, got  1400 bytes
+RECV req 30013 bytes, got  1400 bytes
+RECV req 28613 bytes, got  1400 bytes
+RECV req 27213 bytes, got  1400 bytes
+RECV req 25813 bytes, got  1400 bytes
+RECV req 24413 bytes, got  1400 bytes
+RECV req 23013 bytes, got  1400 bytes
+RECV req 21613 bytes, got  1400 bytes
+RECV req 20213 bytes, got  1400 bytes
+RECV req 18813 bytes, got  1400 bytes
+RECV req 17413 bytes, got  1400 bytes
+RECV req 16013 bytes, got  1400 bytes
+RECV req 14613 bytes, got  1400 bytes
+Writing to abort_pipe.
+Waiting for m_started_sem...
+Closing stream_sock...
+socklib_recvall detected write to abort pipe.
+get_stream_data bad return code: -68
+Did ripstream_rip
+retval = -68 -68
+rmi started = 0
+we're done
+Waiting for hthread_ripper to close...
+we're done 2
+ripthread() exiting!
+Destroying subsystems...
+RIPSTREAM_CLEAR
+relaylib_stop:start
+***relaylib_stop:return
+Destroying m_started_sem
+Done with rip_manager_stop
+Closing abort_pipe.

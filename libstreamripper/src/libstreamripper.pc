@@ -1,0 +1,13 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+includedir=${prefix}/include
+
+Name: liblibstreamripper
+Description: Sample library created by Anjuta project wizard.
+Version: 1.64.7
+Requires: mad id3tag glib-2.0
+Libs: -L${libdir} -lstreamripper -logg -lvorbis
+Cflags: -I${includedir}
