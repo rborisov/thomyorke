@@ -23,9 +23,11 @@ RIP_MANAGER_INFO *rmi = 0;
 STREAM_PREFS prefs;
 char chrbuff[128] = "";
 char newsongname[128] = "";
+char file_path[128] = "";
 
 void streamripper_set_url_dest(char* dest)
 {
+#if 0
     const char *radio_dest = dest,
          *music_path = NULL,
          *radio_path = NULL;
@@ -91,6 +93,7 @@ void streamripper_set_url_dest(char* dest)
     sprintf(chrbuff, "%s%s", music_path, file_path);
     set_outpath(chrbuff);
     syslog(LOG_INFO, "%s: path: %s\n", __func__, chrbuff);
+#endif
 }
 
 void set_instream(const char* streamuri)
@@ -240,14 +243,14 @@ void rip_callback (RIP_MANAGER_INFO* rmi, int message, void *data)
         case RM_ERROR:
             err = (ERROR_INFO*)data;
             syslog(LOG_ERR, "\n%s: error %d [%s]\n", __func__, err->error_code, err->error_str);
-            sprintf(status_str, "error [%s]", err->error_str);
+//            sprintf(status_str, "error [%s]", err->error_str);
             m_alldone = TRUE;
             switch (err->error_code)
             {
                 case 0x24:
                 case 0x25:
                     syslog(LOG_INFO, "%s: %s - lets free file storage\n", __func__, err->error_str);
-                    delete_file_forever(NULL);
+//                    delete_file_forever(NULL);
                     break;
             }
             break;
