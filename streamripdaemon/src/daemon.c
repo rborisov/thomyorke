@@ -37,11 +37,10 @@
 static int running = 0;
 static int delay = 1;
 static int counter = 0;
-static char *pid_file_name = NULL;
+static char pid_file_name[128] = "/home/ruinrobo/streamripperd.pid";
 static char *conf_file_name = NULL;
 static int pid_fd = -1;
 static char *app_name = NULL;
-static FILE *log_stream;
 
 /**
  * \brief Callback function for handling signals.
@@ -50,11 +49,11 @@ static FILE *log_stream;
 void handle_signal(int sig)
 {
 	if(sig == SIGINT) {
-		fprintf(log_stream, "Debug: stopping daemon ...\n");
+		syslog(LOG_DEBUG, "Debug: stopping daemon ...\n");
 		/* Unlock and close lockfile */
 		if(pid_fd != -1) {
 			if (lockf(pid_fd, F_ULOCK, 0) == -1) {
-                fprintf(log_stream, "Error: Failed to release lock\n");
+                syslog(LOG_ERR, "Error: Failed to release lock\n");
             }
 			close(pid_fd);
 		}
@@ -66,10 +65,10 @@ void handle_signal(int sig)
 		/* Reset signal handling to default behavior */
 		signal(SIGINT, SIG_DFL);
 	} else if(sig == SIGHUP) {
-		fprintf(log_stream, "Debug: reloading daemon config file ...\n");
+		syslog(LOG_DEBUG, "Debug: reloading daemon config file ...\n");
 		//read_conf_file(1);
 	} else if(sig == SIGCHLD) {
-		fprintf(log_stream, "Debug: received SIGCHLD signal\n");
+		syslog(LOG_DEBUG, "Debug: received SIGCHLD signal\n");
 	}
 }
 
@@ -121,7 +120,7 @@ static void daemonize()
 	/* Change the working directory to the root directory */
 	/* or another appropriated directory */
 	if (chdir("/") == -1) {
-        fprintf(log_stream, "Error: Failed to change directory\n");
+        syslog(LOG_ERR, "Error: Failed to change directory\n");
     }
 
 	/* Close all open file descriptors */
@@ -154,7 +153,7 @@ static void daemonize()
 		sprintf(str, "%d\n", getpid());
 		/* Write PID to lockfile */
 		if (write(pid_fd, str, strlen(str)) == -1) {
-            fprintf(log_stream, "Error: Failed to Write PID to lockfile\n");
+            syslog(LOG_ERR, "Error: Failed to Write PID to lockfile\n");
         }
 	}
 }
@@ -168,7 +167,6 @@ void print_help(void)
 	printf("  Options:\n");
 	printf("   -h --help                 Print this help\n");
 	printf("   -c --conf_file filename   Read configuration from the file\n");
-	printf("   -l --log_file  filename   Write logs to the file\n");
 	printf("   -d --daemon               Daemonize this application\n");
 	printf("   -p --pid_file  filename   PID file used by daemonized app\n");
 	printf("\n");
@@ -179,14 +177,11 @@ int main(int argc, char *argv[])
 {
 	static struct option long_options[] = {
 		{"conf_file", required_argument, 0, 'c'},
-		{"log_file", required_argument, 0, 'l'},
 		{"help", no_argument, 0, 'h'},
 		{"daemon", no_argument, 0, 'd'},
-		{"pid_file", required_argument, 0, 'p'},
 		{NULL, 0, 0, 0}
 	};
 	int value, option_index = 0, ret;
-	char *log_file_name = NULL;
 	int start_daemonized = 0;
 
 	app_name = argv[0];
@@ -196,12 +191,6 @@ int main(int argc, char *argv[])
 		switch(value) {
 			case 'c':
 				conf_file_name = strdup(optarg);
-				break;
-			case 'l':
-				log_file_name = strdup(optarg);
-				break;
-			case 'p':
-				pid_file_name = strdup(optarg);
 				break;
 			case 'd':
 				start_daemonized = 1;
@@ -225,25 +214,13 @@ int main(int argc, char *argv[])
 	}
 
 	/* Open system log and write message to it */
-	openlog(argv[0], LOG_PID|LOG_CONS, LOG_DAEMON);
+//    setlogmask(LOG_ERR|LOG_INFO);
+    openlog(argv[0], LOG_PID|LOG_CONS, LOG_DAEMON);
 	syslog(LOG_INFO, "Started %s", app_name);
 
 	/* Daemon will handle two signals */
 	signal(SIGINT, handle_signal);
 	signal(SIGHUP, handle_signal);
-
-	/* Try to open log file to this daemon */
-	if(log_file_name != NULL) {
-		log_stream = fopen(log_file_name, "a+");
-		if (log_stream == NULL)
-		{
-			syslog(LOG_ERR, "Can not open log file: %s, error: %s",
-				log_file_name, strerror(errno));
-			log_stream = stdout;
-		}
-	} else {
-		log_stream = stdout;
-	}
 
 	/* This global variable can be changed in function handling signal */
 	running = 1;
@@ -251,18 +228,7 @@ int main(int argc, char *argv[])
 	/* Never ending loop of server */
 	while(running == 1) {
 		/* Debug print */
-		ret = fprintf(log_stream, "Debug: %d\n", counter++);
-		if(ret < 0) {
-			syslog(LOG_ERR, "Can not write to log stream: %s, error: %s",
-				(log_stream == stdout) ? "stdout" : log_file_name, strerror(errno));
-			break;
-		}
-		ret = fflush(log_stream);
-		if(ret != 0) {
-			syslog(LOG_ERR, "Can not fflush() log stream: %s, error: %s",
-				(log_stream == stdout) ? "stdout" : log_file_name, strerror(errno));
-			break;
-		}
+		syslog(LOG_ERR, "Debug: %d\n", counter++);
 
 		/* TODO: dome something useful here */
 
@@ -272,20 +238,12 @@ int main(int argc, char *argv[])
 		sleep(delay);
 	}
 
-	/* Close log file, when it is used. */
-	if (log_stream != stdout)
-	{
-		fclose(log_stream);
-	}
-
 	/* Write system log and close it. */
 	syslog(LOG_INFO, "Stopped %s", app_name);
-	closelog();
+    closelog();
 
 	/* Free allocated memory */
 	if(conf_file_name != NULL) free(conf_file_name);
-	if(log_file_name != NULL) free(log_file_name);
-	if(pid_file_name != NULL) free(pid_file_name);
 
 	return EXIT_SUCCESS;
 }
