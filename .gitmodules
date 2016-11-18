@@ -1,0 +1,9 @@
+[submodule "ca-st-ro"]
+	path = ca-st-ro
+	url = https://github.com/rborisov/ca-st-ro.git
+[submodule "mounts"]
+	path = mounts
+	url = https://github.com/rborisov/mounts.git
+[submodule "streamripperd"]
+	path = streamripperd
+	url = https://github.com/rborisov/streamripperd.git
