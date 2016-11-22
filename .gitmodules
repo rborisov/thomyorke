@@ -1,12 +1,16 @@
 [submodule "ca-st-ro"]
 	path = ca-st-ro
 	url = https://github.com/rborisov/ca-st-ro.git
+	branch = master
 [submodule "mounts"]
 	path = mounts
 	url = https://github.com/rborisov/mounts.git
+	branch = master
 [submodule "streamripperd"]
 	path = streamripperd
 	url = https://github.com/rborisov/streamripperd.git
+	branch = master
 [submodule "gpsmond"]
 	path = gpsmond
 	url = https://github.com/rborisov/gpsmond.git
+	branch = master
