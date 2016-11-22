@@ -7,3 +7,6 @@
 [submodule "streamripperd"]
 	path = streamripperd
 	url = https://github.com/rborisov/streamripperd.git
+[submodule "gpsmond"]
+	path = gpsmond
+	url = https://github.com/rborisov/gpsmond.git
